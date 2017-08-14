@@ -1,7 +1,5 @@
 require "offsite_payments"
-
 class Spree::Gateway::Payumoney < Spree::Gateway
-  # preference :merchant_id, :string
   preference :secret_key, :string
   preference :secret_salt, :string
 

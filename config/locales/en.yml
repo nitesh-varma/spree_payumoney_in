@@ -3,3 +3,7 @@
 
 en:
   hello: "Hello world"
+  spree:
+    merchant_id: 'Merchant Id'
+    secret_key: 'Secret Key'
+    secret_salt: 'Secret Salt'
