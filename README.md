@@ -21,24 +21,24 @@ Introduction goes here.
   If your server was running, restart it so that it can find the assets properly.
 
 5. Add "Payumoney" Payment method from Admin panel
-
+```
   For testing purpose, user following key/salt
   key: gtKFFx
   salt: eCwWELxi
-
+  
+```
 6. Select PayuMoney payment option on Order Payment page
 
 ## Testing
 
 ## Test creditcard info
-
-
+```
   For testing purpose you can use following fake credit card info
   Test Card Name: any name
   Test Card Number: 5123456789012346
   Test CVV: 123
   Test Expiry: May 2020
-
+```
 
 
 ## Contributing
