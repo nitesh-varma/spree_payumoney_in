@@ -1,0 +1,23 @@
+<% payment_form_for_payu @key, @salt,
+      :txnid => "#{@txnid}",
+      :amount => @amount,
+      :productinfo => 'Book',
+      :firstname => "#{@firstname}",
+      :email => "#{@email}",
+      :phone => "#{@phone}",
+      :surl => "#{@surl}",
+      :furl => "#{@furl}",
+      # :udf1 => @lastname,
+      # :udf2 => @phone,
+      # :udf3 => @city,
+      :udf4 => @payment_method_id,
+      :html => { :id => 'payment-form' } %>
+
+<script type="text/javascript">
+    // self executing function here
+    (function() {
+       // your page initialization code here
+       // the DOM will be available here
+       document.getElementById("payment-form").submit();
+    })();
+</script>
