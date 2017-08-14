@@ -70,9 +70,10 @@ module Spree
     end
 
     def cancel
+      payment_method = Spree::PaymentMethod.find(payment_method_id)
       #log some entry into table
       Spree::LogEntry.create({
-        source: 'Spree::Gateway::Payumoney',
+        source: payment_method,
         details: params.to_yaml
       })
 
