@@ -58,7 +58,7 @@ module Spree
       order.update_attributes({:state => "complete", :completed_at => Time.now})
 
       if order.complete?
-        order.update!
+        order.save!
         flash.notice = Spree.t(:order_processed_successfully)
 
         redirect_to order_path(order)
